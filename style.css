@@ -1,0 +1,369 @@
+/* font-family: 'Montserrat-Bold';
+font-family: 'Montserrat-Regular';
+font-family: 'Product Sans'; */
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a:hover {
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*=========================================== header =========================================================*/
+
+.header {
+    min-height: 100vh;
+    background: url('images/web2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__nav {
+    background: #1e2020;
+    padding: 23px 0;
+}
+
+.header__logo {
+    margin-right: 0;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 26px;
+    font-family: 'Product Sans';
+    padding: 6px 18px;
+    border: 1px solid white;
+    border-image: linear-gradient(to right, #fff, #ffcb02);
+    border-image-slice: 1;
+}
+
+.header__logo_span {
+    color: #ffcb02;
+}
+
+.header__logo:hover {
+    color: #fff;
+}
+
+.header__list_link {
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Product Sans';
+    text-transform: uppercase;
+    margin-left: 55px;
+    padding: 0;
+    transition: 1s;
+}
+
+.header__list_link:hover {
+    color: #ffcb02;
+}
+
+.header-button__icon {
+
+    color: white;
+    font-size: 25px;
+}
+
+.header__title {
+    color: #fff;
+    font-size: 60px;
+    font-family: 'Product Sans';
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.header__content_text {
+    font-size: 22px;
+    font-family: 'Product Sans';
+    color: #fff;
+    line-height: 25px;
+    margin-bottom: 0;
+
+}
+
+.header__content {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+/*=========================================== /header =========================================================*/
+/*===================================== <section class="main-story"> ====================================*/
+.main-story {
+    background: #282929;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.main__title {
+    font-family: 'Product Sans';
+    font-size: 28px;
+    color: #d2a90b;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.main__title::before {
+    content: '';
+    width: 53px;
+    height: 2px;
+    background: #fff;
+    margin-left: auto;
+}
+
+.main__title::after {
+    content: '';
+    width: 53px;
+    height: 2px;
+    background: #fff;
+}
+
+.main-story__text {
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Montserrat-Regular';
+    line-height: 25px;
+    text-align: justify;
+}
+
+
+
+
+/*===================================== </section class="main-story"> ====================================*/
+/*==================================== <section class="section-carousel">========================== */
+
+.section-carousel {
+    background: #1f2020;
+}
+
+.slide-content__description_title {
+    font-size: 24px;
+    color: #d3a90b;
+    font-family: 'Montserrat-Bold';
+    text-transform: uppercase;
+    line-height: 17px;
+}
+
+.slide-content_span {
+    color: white;
+}
+
+.slide-content {
+    padding: 15px 0;
+}
+
+.slide-content__text {
+    font-size: 18px;
+    color: #fff;
+    font-family: 'Montserrat-Regular';
+    text-align: justify;
+    line-height: 22px;
+    margin-bottom: 0;
+}
+
+.slide-content__description {
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.carousel-controls {
+    width: max-content;
+    opacity: 1;
+}
+
+.carousel-container {
+    position: relative;
+}
+.carousel-controls__icon{
+    font-size: 27px;
+   
+}
+.carousel-controls i::before{
+    color: #d2a90b;
+}
+
+/*==================================== </section class="section-carousel">========================== */
+/*================================ <section class="works">================= */
+.works{
+    padding: 60px 0;
+    background: #282929;
+}
+.works__text{
+    font-size: 18px;
+    color: #fff;
+    font-family: 'Montserrat-Regular';
+}
+.works__title{
+margin-bottom: 30px;
+}
+
+
+
+
+
+.works-tabs{
+    border: none;
+    justify-content: space-around;
+}
+
+.works-link{
+  
+    color: #1f2020;
+    font-size: 16px;
+    font-family: 'Montserrat-Regular';
+    text-transform: uppercase;
+    padding: 13px 30px;
+    background: #fff;
+    border-radius: 25px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.works-link:hover{
+    color: #1f2020;
+}
+.works-link.active{
+    color: white;
+    background: #1f2020;
+}
+.works-tabpanel{
+    color: white;
+}
+.works-tabpanel__description__title{
+    color: #d2a90b;
+    font-size: 24px;
+    font-family: 'Product Sans';
+}
+.works-tabpanel__description__text{
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Montserrat-Regular';
+    line-height: 22px;
+    text-align: justify;
+}
+.works-tabpanel__content__link{
+font-size: 16px;
+color: #fff;
+font-family: 'Montserrat-Bold';
+text-transform: uppercase;
+padding: 15px 30px;
+background: #d3a90b;
+border-radius: 25px;
+display: inline-block;
+}
+.works-tabpanel__content__link:hover{
+    color: white;
+}
+.works-tabpanel__content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 25px 15px 25px 25px;
+    background: #1f2020;
+    margin-left: 27px;
+    border-radius: 5px;
+}
+
+.works-tabpanel__tab__img{
+    min-width: 50vw;
+    height: 400px;
+}
+/*================================ </section class="works">================= */
+/* =========================<section class="opportunity"> ===================*/
+.opportunity{
+    background: #282929;
+}
+.opportunity-card{
+    border-radius: 0;
+    border: none;
+    margin-bottom: 15px;
+}
+.opportunity-card__header{
+    padding: 0;
+    border: 0;
+}
+.opportunity-btn:focus{
+    box-shadow: none;
+}
+.opportunity-btn{
+    padding: 17px 15px;
+    background: #d3a90b;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #282929;
+    border-radius: 0;
+    font-size: 20px;
+    font-family: 'Montserrat-Bold';
+    text-transform: uppercase;
+}
+.opportunity-btn.collapsed{
+    background: #1f2020;
+    color: white;
+}
+.opportunity-btn__icon{
+    font-size: 26px;
+    margin-right: 10px;
+}
+.opportunity-card__body{
+    background: #1f2020;
+    font-size: 18px;
+    color: #fff;
+    font-family: 'Montserrat-Regular';
+    line-height: 24px;
+    border: 1px solid #d3a90b;
+    text-align: justify;
+}
+
+/* =========================</section class="opportunity"> ===================*/
+
+/* ============================ footer =================================== */
+.footer{
+    background: #1f2020;
+    padding-bottom: 20px;
+}
+.footer__container{
+    display: flex;
+    flex-direction: column;
+   
+}
+.footer__list_link{
+    margin: 0 27px;
+    text-align: center;
+}
+.footer__logo{
+    margin-bottom: 45px;
+}
+.footer__nav{
+    display: flex;
+    flex-direction: column;
+}
+.footer__tel{
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    font-family: 'Product Sans';
+    margin-right: 15px;
+}
+.footer__email{
+    color: white;
+    font-size: 20px;
+    font-family: 'Product Sans';
+    margin-left: 15px;
+}
+.footer__contact a:hover{
+    color: #fff;
+}
+/* ============================ /footer =================================== */
